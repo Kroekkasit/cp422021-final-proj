@@ -96,8 +96,15 @@ app.get('/test-db-connection', async (req, res) => {
 
 app.post("/register", register)
 
+const login = (req, res, next) => {
+    
+    console.log(req.body);
+    console.log("hello");
+}
 
 
+
+app.post("/login", login)
 
 
 
